@@ -26,7 +26,7 @@ git lfs pull
 
 
 
-The data is in JSON format. The dataset contains three JSON files: `train_sessions.json`, `dev_sessions.json`, `test_sessions.json`. Each JSON file contains a list of JSON objects, where each JSON object represents a dialogue. 
+The data is in JSON format. The dataset contains three JSON files: `train_sessions.json`, `dev_sessions.json`, `test_sessions.json`. Each JSON file contains a list of JSON objects, where each JSON object represents a conversation. 
 
 The following are the fields of JSON:
 
