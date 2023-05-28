@@ -37,3 +37,64 @@ The following are the fields of JSON:
     * `oracle_query (string) `: The natural language query, which is de-contextualized.
     * `answer (string)` : The response to the query we extracted from the positive passage.
     * `passage (int & string)` : The ID of the positive passage and its content. The passages are from MS MARCO passage V1.
+
+This is an example of conversation:
+
+```json
+{
+    "session_id": "marco-gen-dev-761127",
+    "turns": [
+        {
+            "qid": 566556,
+            "query": "What are the symptoms of bronchitis?",
+            "oracle_query": "What are the symptoms of bronchitis?",
+            "answer": "Symptoms of bronchitis include coughing up yellow-grey mucus, sore throat, wheezing and having a blocked nose.",
+            "passage": [
+                1511891,
+                "Cold & flu health centre. Bronchitis. Bronchitis is a common infection causing inflammation and irritation to the main airways of the lungs. Symptoms of bronchitis include coughing up yellow-grey mucus, sore throat, wheezing and having a blocked nose. Acute bronchitis may be responsible for the hacking cough and phlegm production that sometimes accompany an upper respiratory infection. In most cases, the infection is viral in origin, but sometimes it's caused by bacteria."
+            ]
+        },
+        {
+            "qid": 784788,
+            "query": "What is pneumonia?",
+            "oracle_query": "What is pneumonia?",
+            "answer": "Pneumonia (nu-MO-ne-ah) is an infection in one or both of the lungs.",
+            "passage": [
+                1011041,
+                "Pneumonia (nu-MO-ne-ah) is an infection in one or both of the lungs. Many germs\u00e2\u0080\u0094such as bacteria, viruses, and fungi\u00e2\u0080\u0094can cause pneumonia.The infection inflames your lungs' air sacs, which are called alveoli (al-VEE-uhl-eye).neumonia (nu-MO-ne-ah) is an infection in one or both of the lungs. Many germs\u00e2\u0080\u0094such as bacteria, viruses, and fungi\u00e2\u0080\u0094can cause pneumonia."
+            ]
+        },
+        {
+            "qid": 476203,
+            "query": "What are its symptoms?",
+            "oracle_query": "What are pneumonia's symptoms?",
+            "answer": "Symptoms also can vary, depending on whether your pneumonia is bacterial or viral.",
+            "passage": [
+                385922,
+                "Symptoms also can vary, depending on whether your pneumonia is bacterial or viral. 1  In bacterial pneumonia, your temperature may rise as high as 105 degrees F. 2  The initial symptoms of viral pneumonia are the same as influenza symptoms: fever, a dry cough, headache, muscle pain, and weakness."
+            ]
+        },
+        {
+            "qid": 508239,
+            "query": "What are the symptoms of mono in adults?",
+            "oracle_query": "What are the symptoms of mono in adults?",
+            "answer": "2  The symptoms of mono include: 3  fever, 4  fatigue, 5  sore throat, and.",
+            "passage": [
+                1184563,
+                "1 Most adults have laboratory evidence (antibodies against the EBV) indicative of a previous infection with EBV and are immune to further infection. 2  The symptoms of mono include: 3  fever, 4  fatigue, 5  sore throat, and. 6  swollen lymph nodes. 7  The diagnosis of mono is confirmed by blood tests."
+            ]
+        },
+        {
+            "qid": 507997,
+            "query": "What about an inner ear infection?",
+            "oracle_query": "What are the symptoms of an inner ear infection?",
+            "answer": "Symptoms include dizziness, loss of balance, nausea, vomiting, tinnitus, and vertigo.",
+            "passage": [
+                1150712,
+                "Labyrinthitis is an inner ear disorder. It occurs when a vestibular nerve, important to spatial navigation and balance control, becomes inflamed. Symptoms include dizziness, loss of balance, nausea, vomiting, tinnitus, and vertigo. With proper treatment, most people find relief from symptoms within 1 to 3 weeks."
+            ]
+        }
+    ]
+}
+```
+
