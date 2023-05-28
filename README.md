@@ -37,6 +37,3 @@ The following are the fields of JSON:
     * `oracle_query (string) `: The natural language query, which is de-contextualized.
     * `answer (string)` : The response to the query we extracted from the positive passage.
     * `passage (int & string)` : The ID of the positive passage and its content. The passages are from MS MARCO passage V1.
-
-## Citation
-
